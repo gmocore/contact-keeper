@@ -5,7 +5,7 @@ const ContactFilter = () => {
     const contactContext = useContext(ContactContext);
     const text = useRef("");
 
-    const { clearFilter, filterContacts, filtered } = contactContext;
+    const { filterContacts, clearFilter, filtered } = contactContext;
 
     useEffect(() => {
         if (filtered === null) {
@@ -20,12 +20,13 @@ const ContactFilter = () => {
             clearFilter();
         }
     };
+
     return (
         <form>
             <input
                 ref={text}
                 type="text"
-                placeholder="Filter Contacts"
+                placeholder="Filter Contacts..."
                 onChange={onChange}
             />
         </form>

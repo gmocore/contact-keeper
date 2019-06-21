@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import Contacts from "../contacts/Contacts";
-import Contactform from "../contacts/ContactForm";
+import ContactForm from "../contacts/ContactForm";
 import ContactFilter from "../contacts/ContactFilter";
 import AuthContext from "../../context/auth/authContext";
 
@@ -11,10 +11,11 @@ const Home = () => {
         authContext.loadUser();
         // eslint-disable-next-line
     }, []);
+
     return (
         <div className="grid-2">
             <div>
-                <Contactform />
+                <ContactForm />
             </div>
             <div>
                 <ContactFilter />

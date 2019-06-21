@@ -38,12 +38,7 @@ const ContactForm = () => {
         } else {
             updateContact(contact);
         }
-        setContact({
-            name: "",
-            email: "",
-            phone: "",
-            type: "personal"
-        });
+        clearAll();
     };
 
     const clearAll = () => {
@@ -57,22 +52,22 @@ const ContactForm = () => {
             </h2>
             <input
                 type="text"
-                name="name"
                 placeholder="Name"
+                name="name"
                 value={name}
                 onChange={onChange}
             />
             <input
                 type="email"
-                name="email"
                 placeholder="Email"
+                name="email"
                 value={email}
                 onChange={onChange}
             />
             <input
                 type="text"
-                name="phone"
                 placeholder="Phone"
+                name="phone"
                 value={phone}
                 onChange={onChange}
             />

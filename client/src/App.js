@@ -24,7 +24,7 @@ const App = () => {
             <ContactState>
                 <AlertState>
                     <Router>
-                        <Fragment key="App">
+                        <Fragment>
                             <Navbar />
                             <div className="container">
                                 <Alerts />
@@ -41,13 +41,13 @@ const App = () => {
                                     />
                                     <Route
                                         exact
-                                        path="/login"
-                                        component={Login}
+                                        path="/register"
+                                        component={Register}
                                     />
                                     <Route
                                         exact
-                                        path="/register"
-                                        component={Register}
+                                        path="/login"
+                                        component={Login}
                                     />
                                 </Switch>
                             </div>
